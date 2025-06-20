@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LoginForm = () => {
   return (
@@ -13,9 +14,12 @@ const LoginForm = () => {
         placeholder="Contraseña"
         className="p-3 bg-[#2A354A] rounded-md outline-none"
       />
-      <button className="bg-[#3B82F6] hover:bg-[#60A5FA] p-3 rounded-md transition">
+      <Link
+        to="/dashboard"
+        className="bg-[#3B82F6] hover:bg-[#60A5FA] p-3 rounded-md text-center transition"
+      >
         Ingresar
-      </button>
+      </Link>
     </form>
   )
 }
